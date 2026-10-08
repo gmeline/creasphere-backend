@@ -1,4 +1,7 @@
 node_modules/
 .env
 *.log
+logs/
 uploads/
+coverage/
+.DS_Store
