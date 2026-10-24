@@ -71,7 +71,7 @@ La réponse doit contenir `ok: 1`.
 | `nodemon` _(dev)_ | Redémarre le serveur automatiquement à chaque modification de fichier |
 | `cors`            | Autorise les requêtes cross-origin depuis le frontend                 |
 | `morgan`          | Logger HTTP (affiche les requêtes en console)                         |
-| `mongoDB`         | ODM pour interagir avec MongoDB.                                      |
+| `mongoDB`         | ODM pour interagir avec MongoDB                                       |
 
 ## Structure du projet
 
