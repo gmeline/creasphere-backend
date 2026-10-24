@@ -9,7 +9,31 @@ Elle fournit les créations affichées dans la galerie, les techniques présent�
 
 - **Node.js** ≥ 18
 - **Express 5** (framework HTTP)
-- **MongoDB** + Mongoose _(à venir, Phase 1)_
+- **MongoDB** + Mongoose (base de données)
+
+## Prérequis
+
+- **Node.js** > 18
+- **MongoDB** > 7
+
+### Démarrer MongoDB
+
+Le serveur refise de démarrer si la base n'est pas joignable : MongoDB doit tourner **avant** `npm run dev`
+
+| Système                    | Installation                                                                                                  | Démarrer                                                  | Arrêter                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------- |
+| **macOS**                  | `brew tap mongodb/brew` puis `brew install mongodb-community`                                                 | `brew services start mongodb-community`                   | `brew services stop mongodb-community` |
+| **Windows**                | Installeur `.msi` officiel, en cochant _Install MongoD as a Service_                                          | Automatique (sinon `net start MongoDB` en administrateur) | `net stop MongoDB`                     |
+| **Linux (Ubuntu/Debian)**  | Paquet `mongodb-org` ([guide officiel](https://www.mongodb.com/docs/manual/administration/install-on-linux/)) | `sudo systemctl start mongod`                             | `sudo systemctl stop mongod`           |
+| **Docker** (tous systèmes) | —                                                                                                             | `docker run -d --name mongo -p 27017:27017 mongo:7`       | `docker stop mongo`                    |
+
+Vérifier que MongoDB répond :
+
+```bash
+mongosh --eval "db.runCommand({ ping: 1})"
+```
+
+La réponse doit contenir `ok: 1`.
 
 ## Installation
 
@@ -47,6 +71,7 @@ Elle fournit les créations affichées dans la galerie, les techniques présent�
 | `nodemon` _(dev)_ | Redémarre le serveur automatiquement à chaque modification de fichier |
 | `cors`            | Autorise les requêtes cross-origin depuis le frontend                 |
 | `morgan`          | Logger HTTP (affiche les requêtes en console)                         |
+| `mongoDB`         | ODM pour interagir avec MongoDB.                                      |
 
 ## Structure du projet
 
