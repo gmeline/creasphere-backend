@@ -9,7 +9,7 @@ Elle fournit les créations affichées dans la galerie, les techniques présent�
 
 - **Node.js** ≥ 18
 - **Express 5** (framework HTTP)
-- **MongoDB** + Mongoose *(à venir, Phase 1)*
+- **MongoDB** + Mongoose _(à venir, Phase 1)_
 
 ## Installation
 
@@ -33,20 +33,20 @@ Elle fournit les créations affichées dans la galerie, les techniques présent�
 
 ## Scripts disponibles
 
-| Script | Description |
-|---|---|
+| Script        | Description                                                                   |
+| ------------- | ----------------------------------------------------------------------------- |
 | `npm run dev` | Lance le serveur avec nodemon (redémarrage automatique à chaque modification) |
-| `npm start` | Lance le serveur avec Node (usage production) |
+| `npm start`   | Lance le serveur avec Node (usage production)                                 |
 
 ## Librairies utilisées
 
-| Librairie | À quoi elle sert |
-|---|---|
-| `express` | Framework serveur HTTP / routing de l'API |
-| `dotenv` | Chargement des variables d'environnement depuis `.env` |
-| `nodemon` *(dev)* | Redémarre le serveur automatiquement à chaque modification de fichier |
-| ‘ cors ’ | Autorise les requêtes cross-origin depuis le frontend |
-| ‘morgan’ | Logger HTTP (affiche les requêtes en console) |
+| Librairie         | À quoi elle sert                                                      |
+| ----------------- | --------------------------------------------------------------------- |
+| `express`         | Framework serveur HTTP / routing de l'API                             |
+| `dotenv`          | Chargement des variables d'environnement depuis `.env`                |
+| `nodemon` _(dev)_ | Redémarre le serveur automatiquement à chaque modification de fichier |
+| `cors`            | Autorise les requêtes cross-origin depuis le frontend                 |
+| `morgan`          | Logger HTTP (affiche les requêtes en console)                         |
 
 ## Structure du projet
 

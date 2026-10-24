@@ -1,5 +1,9 @@
-require('dotenv').config();
-const app = require('./src/app');
+require("dotenv").config({ quiet: true });
+
+const checkEnv = require("./src/config/env");
+checkEnv();
+
+const app = require("./src/app");
 
 const PORT = process.env.PORT || 5000;
 
