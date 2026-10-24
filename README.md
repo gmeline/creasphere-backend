@@ -45,6 +45,8 @@ Elle fournit les créations affichées dans la galerie, les techniques présent�
 | `express` | Framework serveur HTTP / routing de l'API |
 | `dotenv` | Chargement des variables d'environnement depuis `.env` |
 | `nodemon` *(dev)* | Redémarre le serveur automatiquement à chaque modification de fichier |
+| ‘ cors ’ | Autorise les requêtes cross-origin depuis le frontend |
+| ‘morgan’ | Logger HTTP (affiche les requêtes en console) |
 
 ## Structure du projet
 
