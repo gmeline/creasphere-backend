@@ -1,9 +1,10 @@
-const express = require('express');
+const express = require("express");
+const healthRoutes = require("./routes/healthRoutes");
 
 const app = express();
 
 app.use(express.json());
 
-// Les routes et middlewares seront ajoutés ici au fil des US
+app.use("/health", healthRoutes);
 
 module.exports = app;
